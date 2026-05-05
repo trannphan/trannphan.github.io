@@ -40,10 +40,10 @@ nav a {
 
 /* CONTENT */
 .content {
-  max-width: 750px;
+  max-width: 750px;   /* 🔼 slightly wider overall */
   margin: auto;
   text-align: center;
-  padding: 1.5rem 1.5rem;   /* 🔽 reduced */
+  padding: 1.5rem;
 }
 
 /* TEXT BLOCKS */
