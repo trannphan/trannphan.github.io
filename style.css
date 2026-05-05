@@ -1,0 +1,186 @@
+body {
+  font-family: "EB Garamond", Garamond, "Times New Roman", serif;
+  margin: 0;
+  background: #f7f5f2;
+  color: #333;
+  line-height: 1.6;
+  font-size: 18px;
+}
+
+/* HEADER */
+header {
+  background: #4a6a86;
+  color: white;
+  text-align: center;
+  padding: 2.5rem 1rem;
+}
+
+header h1 {
+  margin: 0;
+  font-size: 2.5rem;
+}
+
+header p {
+  margin-top: 0.5rem;
+  font-size: 1rem;
+}
+
+/* NAV */
+nav {
+  text-align: center;
+  padding: 1rem;
+  background: #eae7e2;
+}
+
+nav a {
+  margin: 0 15px;
+  text-decoration: none;
+  color: #4a6a86;
+}
+
+/* CONTENT */
+.content {
+  max-width: 800px;
+  margin: auto;
+  text-align: center;
+  padding: 2rem;
+}
+
+/* LISTS */
+ul {
+  list-style-position: outside;
+  padding-left: 1.5rem;
+  text-align: left;
+  margin: 1.2rem auto;     /* slightly reduced */
+  max-width: 650px;
+}
+
+li {
+  font-size: 1.1rem;       /* 🔽 ~20% smaller (from 1rem baseline) */
+  margin-bottom: 0.7rem;   /* 🔽 ~30% tighter spacing */
+  line-height: 1.4;        /* slightly tighter */
+}
+
+/* PROFILE PHOTO */
+.profile-photo {
+  text-align: center;
+  margin: 3rem 0 1.5rem;
+}
+
+.profile-photo img {
+  width: 200px;
+  border-radius: 50%;
+}
+
+/* ICONS */
+.icons {
+  display: flex;
+  justify-content: center;
+  gap: 35px;
+  margin-top: 2rem;
+}
+
+.icons a {
+  font-size: 2rem;
+  color: #4a6a86;
+  transition: 0.2s;
+}
+
+.icons a:hover {
+  transform: translateY(-4px);
+  color: #2f4f66;
+}
+
+/* UPDATES */
+.updates {
+  margin-top: 3rem;
+  text-align: left;
+}
+
+.updates h3 {
+  text-align: center;
+}
+
+.tile-image {
+  text-align: center;
+  margin-top: 4rem;
+}
+
+.tile-image img {
+  width: 105px;
+}
+
+/* FOOTER */
+footer {
+  background: #4a6a86;
+  color: white;
+  text-align: center;
+  padding: 1.5rem;
+  margin-top: 4rem;
+}
+/* =========================
+   MOBILE OPTIMIZATION
+========================= */
+@media (max-width: 600px) {
+
+  /* Header text scales down */
+  header h1 {
+    font-size: 1.8rem;
+  }
+
+  header p {
+    font-size: 1.3rem;
+  }
+
+  /* Navigation wraps nicely */
+  nav {
+    padding: 0.8rem;
+  }
+
+  nav a {
+    display: inline-block;
+    margin: 5px 8px;
+    font-size: 0.9rem;
+  }
+
+  /* Profile photo smaller on phone */
+  .profile-photo img {
+    width: 140px;
+  }
+
+  /* Content padding tighter */
+  .content {
+    padding: 1.5rem 1rem;
+  }
+
+  /* Icons shrink + wrap */
+  .icons {
+    gap: 20px;
+    flex-wrap: wrap;
+  }
+
+  .icons a {
+    font-size: 1.6rem;
+  }
+
+  /* Lists fit screen better */
+  ul {
+    padding-left: 1.2rem;
+    max-width: 100%;
+  }
+
+  li {
+    font-size: 1.2rem;
+  }
+
+  /* Tile image scales */
+  .tile-image img {
+    width: 80px;
+  }
+
+  /* Footer spacing */
+  footer {
+    padding: 1rem;
+    font-size: 0.85rem;
+  }
+}
