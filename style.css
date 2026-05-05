@@ -40,7 +40,7 @@ nav a {
 
 /* CONTENT */
 .content {
-  max-width: 800px;
+  max-width: 750px;
   margin: auto;
   text-align: center;
   padding: 1.5rem 1.5rem;   /* 🔽 reduced */
@@ -56,10 +56,9 @@ ul {
   list-style-position: outside;
   padding-left: 1.5rem;
   text-align: left;
-  margin: 0.8rem auto;   /* 🔽 reduced */
-  max-width: 650px;
+  margin: 0.8rem 0;   /* remove auto centering */
+  max-width: 100%;    /* ✅ fills .content */
 }
-
 li {
   font-size: 1.05rem;   /* 🔽 slightly smaller */
   margin-bottom: 0.5rem;   /* 🔽 tighter */
