@@ -12,7 +12,7 @@ header {
   background: #4a6a86;
   color: white;
   text-align: center;
-  padding: 2.5rem 1rem;
+  padding: 2rem 1rem;   /* 🔽 reduced */
 }
 
 header h1 {
@@ -21,19 +21,19 @@ header h1 {
 }
 
 header p {
-  margin-top: 0.5rem;
+  margin-top: 0.4rem;
   font-size: 1rem;
 }
 
 /* NAV */
 nav {
   text-align: center;
-  padding: 1rem;
+  padding: 0.8rem;   /* 🔽 reduced */
   background: #eae7e2;
 }
 
 nav a {
-  margin: 0 15px;
+  margin: 0 12px;   /* 🔽 slightly tighter */
   text-decoration: none;
   color: #4a6a86;
 }
@@ -43,7 +43,12 @@ nav a {
   max-width: 800px;
   margin: auto;
   text-align: center;
-  padding: 2rem;
+  padding: 1.5rem 1.5rem;   /* 🔽 reduced */
+}
+
+/* TEXT BLOCKS */
+.content p {
+  margin: 6px 0;   /* 🔽 tighter lines (important fix) */
 }
 
 /* LISTS */
@@ -51,20 +56,20 @@ ul {
   list-style-position: outside;
   padding-left: 1.5rem;
   text-align: left;
-  margin: 1.2rem auto;     /* slightly reduced */
+  margin: 0.8rem auto;   /* 🔽 reduced */
   max-width: 650px;
 }
 
 li {
-  font-size: 1.1rem;       /* 🔽 ~20% smaller (from 1rem baseline) */
-  margin-bottom: 0.7rem;   /* 🔽 ~30% tighter spacing */
-  line-height: 1.4;        /* slightly tighter */
+  font-size: 1.05rem;   /* 🔽 slightly smaller */
+  margin-bottom: 0.5rem;   /* 🔽 tighter */
+  line-height: 1.4;
 }
 
 /* PROFILE PHOTO */
 .profile-photo {
   text-align: center;
-  margin: 3rem 0 1.5rem;
+  margin: 2rem 0 0.8rem;   /* 🔽 BIG FIX: reduces gap below photo */
 }
 
 .profile-photo img {
@@ -76,8 +81,8 @@ li {
 .icons {
   display: flex;
   justify-content: center;
-  gap: 35px;
-  margin-top: 2rem;
+  gap: 30px;   /* slightly tighter */
+  margin: 1rem 0;   /* 🔽 reduced (was too large) */
 }
 
 .icons a {
@@ -91,9 +96,14 @@ li {
   color: #2f4f66;
 }
 
+/* HEADINGS */
+h3 {
+  margin: 1rem 0 0.4rem;   /* 🔽 tighter */
+}
+
 /* UPDATES */
 .updates {
-  margin-top: 3rem;
+  margin-top: 1.5rem;   /* 🔽 reduced from 3rem */
   text-align: left;
 }
 
@@ -101,9 +111,10 @@ li {
   text-align: center;
 }
 
+/* TILE IMAGE */
 .tile-image {
   text-align: center;
-  margin-top: 4rem;
+  margin-top: 2rem;   /* 🔽 reduced from 4rem */
 }
 
 .tile-image img {
@@ -115,72 +126,66 @@ footer {
   background: #4a6a86;
   color: white;
   text-align: center;
-  padding: 1.5rem;
-  margin-top: 4rem;
+  padding: 1.2rem;   /* 🔽 reduced */
+  margin-top: 2rem;   /* 🔽 reduced */
 }
+
 /* =========================
    MOBILE OPTIMIZATION
 ========================= */
 @media (max-width: 600px) {
 
-  /* Header text scales down */
   header h1 {
     font-size: 1.8rem;
   }
 
   header p {
-    font-size: 1.3rem;
+    font-size: 1.1rem;
   }
 
-  /* Navigation wraps nicely */
   nav {
-    padding: 0.8rem;
+    padding: 0.6rem;
   }
 
   nav a {
     display: inline-block;
-    margin: 5px 8px;
+    margin: 4px 6px;
     font-size: 0.9rem;
   }
 
-  /* Profile photo smaller on phone */
   .profile-photo img {
     width: 140px;
   }
 
-  /* Content padding tighter */
   .content {
-    padding: 1.5rem 1rem;
+    padding: 1.2rem 0.8rem;
   }
 
-  /* Icons shrink + wrap */
   .icons {
-    gap: 20px;
+    gap: 18px;
     flex-wrap: wrap;
+    margin: 0.8rem 0;
   }
 
   .icons a {
     font-size: 1.6rem;
   }
 
-  /* Lists fit screen better */
   ul {
     padding-left: 1.2rem;
     max-width: 100%;
   }
 
   li {
-    font-size: 1.2rem;
+    font-size: 1rem;
   }
 
-  /* Tile image scales */
   .tile-image img {
     width: 80px;
   }
 
-  /* Footer spacing */
   footer {
-    padding: 1rem;
+    padding: 0.9rem;
     font-size: 0.85rem;
   }
 }
