@@ -1,2 +1,3 @@
 User-agent: *
 Allow: /
+Sitemap: https://trannphan.github.io/sitemap.xml
