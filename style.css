@@ -188,3 +188,30 @@ footer {
     font-size: 0.85rem;
   }
 }
+
+/* tighten space between image and first text */
+.profile-photo {
+  margin-bottom: 5px;
+}
+
+/* remove default paragraph top spacing in intro */
+.intro p {
+  margin: 4px 0;
+}
+
+/* tighten first block as a unit */
+.intro {
+  margin-top: 0;
+  margin-bottom: 18px; /* creates separation from positions */
+}
+
+/* spacing for the affiliation block */
+.positions p {
+  margin: 4px 0;
+}
+
+/* pushes last two lines away from intro */
+.positions {
+  margin-top: 10px;
+  margin-bottom: 25px;
+}
