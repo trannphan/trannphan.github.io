@@ -51,12 +51,25 @@ nav a {
   margin: 6px 0;
 }
 
+/* HEADINGS */
+h3 {
+  margin-top: 1.6rem;   /* more space above heading */
+  margin-bottom: 0;
+}
+
+/* tighter spacing between h3 and p */
+h3 + p {
+  margin-top: 0 !important;
+  margin-bottom: 0.2rem;
+}
+
 /* LISTS */
 ul {
   list-style-position: outside;
   padding-left: 1.5rem;
   text-align: left;
-  margin: 0.8rem 0 1.3rem;   /* slightly more space below lists */
+  margin-top: 0.6rem;
+  margin-bottom: 1.8rem;   /* more space before next heading */
   max-width: 100%;
 }
 
@@ -95,15 +108,6 @@ li {
 .icons a:hover {
   transform: translateY(-4px);
   color: #2f4f66;
-}
-
-/* HEADINGS */
-h3 {
-  margin: 1.3rem 0 0.1rem;   /* more above, tighter below */
-}
-
-h3 + p {
-  margin-top: 0;   /* tightens h3-to-p spacing */
 }
 
 /* UPDATES */
