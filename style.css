@@ -53,14 +53,14 @@ nav a {
 
 /* HEADINGS */
 h3 {
-  margin-top: 1.6rem;   /* more space above heading */
+  margin-top: 2rem;      /* more space above heading */
   margin-bottom: 0;
 }
 
-/* tighter spacing between h3 and p */
-h3 + p {
-  margin-top: 0 !important;
-  margin-bottom: 0.2rem;
+/* tighter spacing between h3 and following p */
+.content h3 + p {
+  margin-top: -4px;
+  margin-bottom: 2px;
 }
 
 /* LISTS */
@@ -69,7 +69,7 @@ ul {
   padding-left: 1.5rem;
   text-align: left;
   margin-top: 0.6rem;
-  margin-bottom: 1.8rem;   /* more space before next heading */
+  margin-bottom: 2.2rem;   /* more space before next heading */
   max-width: 100%;
 }
 
