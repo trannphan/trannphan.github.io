@@ -12,7 +12,7 @@ header {
   background: #4a6a86;
   color: white;
   text-align: center;
-  padding: 2rem 1rem;   /* 🔽 reduced */
+  padding: 2rem 1rem;
 }
 
 header h1 {
@@ -28,19 +28,19 @@ header p {
 /* NAV */
 nav {
   text-align: center;
-  padding: 0.8rem;   /* 🔽 reduced */
+  padding: 0.8rem;
   background: #eae7e2;
 }
 
 nav a {
-  margin: 0 12px;   /* 🔽 slightly tighter */
+  margin: 0 12px;
   text-decoration: none;
   color: #4a6a86;
 }
 
 /* CONTENT */
 .content {
-  max-width: 750px;   /* 🔼 slightly wider overall */
+  max-width: 750px;
   margin: auto;
   text-align: center;
   padding: 1.5rem;
@@ -48,7 +48,7 @@ nav a {
 
 /* TEXT BLOCKS */
 .content p {
-  margin: 6px 0;   /* 🔽 tighter lines (important fix) */
+  margin: 6px 0;
 }
 
 /* LISTS */
@@ -56,19 +56,21 @@ ul {
   list-style-position: outside;
   padding-left: 1.5rem;
   text-align: left;
-  margin: 0.8rem 0;   /* remove auto centering */
-  max-width: 100%;    /* ✅ fills .content */
+  margin: 0.8rem 0 1.3rem;   /* slightly more space below lists */
+  max-width: 100%;
 }
+
 li {
-  font-size: 1.05rem;   /* 🔽 slightly smaller */
-  margin-bottom: 0.5rem;   /* 🔽 tighter */
+  font-size: 1.05rem;
+  margin-bottom: 0.5rem;
   line-height: 1.4;
 }
 
 /* PROFILE PHOTO */
 .profile-photo {
   text-align: center;
-  margin: 2rem 0 0.8rem;   /* 🔽 BIG FIX: reduces gap below photo */
+  margin: 2rem 0 0.8rem;
+  margin-bottom: 5px;
 }
 
 .profile-photo img {
@@ -80,8 +82,8 @@ li {
 .icons {
   display: flex;
   justify-content: center;
-  gap: 30px;   /* slightly tighter */
-  margin: 1rem 0;   /* 🔽 reduced (was too large) */
+  gap: 30px;
+  margin: 1rem 0;
 }
 
 .icons a {
@@ -97,12 +99,16 @@ li {
 
 /* HEADINGS */
 h3 {
-  margin: 1rem 0 0.4rem;   /* 🔽 tighter */
+  margin: 1.3rem 0 0.1rem;   /* more above, tighter below */
+}
+
+h3 + p {
+  margin-top: 0;   /* tightens h3-to-p spacing */
 }
 
 /* UPDATES */
 .updates {
-  margin-top: 1.5rem;   /* 🔽 reduced from 3rem */
+  margin-top: 1.5rem;
   text-align: left;
 }
 
@@ -113,7 +119,7 @@ h3 {
 /* TILE IMAGE */
 .tile-image {
   text-align: center;
-  margin-top: 2rem;   /* 🔽 reduced from 4rem */
+  margin-top: 2rem;
 }
 
 .tile-image img {
@@ -125,8 +131,28 @@ footer {
   background: #4a6a86;
   color: white;
   text-align: center;
-  padding: 1.2rem;   /* 🔽 reduced */
-  margin-top: 2rem;   /* 🔽 reduced */
+  padding: 1.2rem;
+  margin-top: 2rem;
+}
+
+/* INTRO SECTION */
+.intro p {
+  margin: 4px 0;
+}
+
+.intro {
+  margin-top: 0;
+  margin-bottom: 18px;
+}
+
+/* POSITIONS SECTION */
+.positions p {
+  margin: 4px 0;
+}
+
+.positions {
+  margin-top: 10px;
+  margin-bottom: 25px;
 }
 
 /* =========================
@@ -187,31 +213,4 @@ footer {
     padding: 0.9rem;
     font-size: 0.85rem;
   }
-}
-
-/* tighten space between image and first text */
-.profile-photo {
-  margin-bottom: 5px;
-}
-
-/* remove default paragraph top spacing in intro */
-.intro p {
-  margin: 4px 0;
-}
-
-/* tighten first block as a unit */
-.intro {
-  margin-top: 0;
-  margin-bottom: 18px; /* creates separation from positions */
-}
-
-/* spacing for the affiliation block */
-.positions p {
-  margin: 4px 0;
-}
-
-/* pushes last two lines away from intro */
-.positions {
-  margin-top: 10px;
-  margin-bottom: 25px;
 }
