@@ -127,7 +127,7 @@ li {
 }
 
 .tile-image img {
-  width: 105px;
+  width: 135px;
 }
 
 /* FOOTER */
@@ -210,7 +210,7 @@ footer {
   }
 
   .tile-image img {
-    width: 100px;
+    width: 80px;
   }
 
   footer {
