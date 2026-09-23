@@ -162,8 +162,8 @@ footer {
 
 /* POSITIONS SECTION */
 .positions p {
-  margin: 4px 0;
-  font-size: 1rem;
+  margin: 12px 0;        /* was 4px — increases space between paragraphs */
+  font-size: 1.05rem;    /* was 1rem — slightly bigger */
 }
 
 .positions {
