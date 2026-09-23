@@ -79,11 +79,43 @@ li {
   line-height: 1.4;
 }
 
-/* PROFILE PHOTO */
+/* HERO LAYOUT — photo left, text right */
+.hero {
+  display: flex;
+  align-items: flex-start;
+  gap: 2rem;
+  margin-bottom: 1.5rem;
+}
+
 .profile-photo {
   text-align: center;
-  margin: 2rem 0 0.8rem;
-  margin-bottom: 5px;
+  flex-shrink: 0;
+  margin: 0.3rem 0 0;       /* remove old top/bottom margin */
+}
+
+.hero-text {
+  flex: 1;
+  text-align: left;
+}
+
+.hero-text .icons {
+  justify-content: flex-start;  /* align icons left under text */
+}
+
+/* MOBILE: stack vertically on small screens */
+@media (max-width: 600px) {
+  .hero {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .hero-text {
+    text-align: center;
+  }
+
+  .hero-text .icons {
+    justify-content: center;
+  }
 }
 
 .profile-photo img {
