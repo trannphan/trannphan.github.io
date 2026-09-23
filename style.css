@@ -82,8 +82,7 @@ li {
 /* PROFILE PHOTO */
 .profile-photo {
   text-align: center;
-  margin: 2rem 0 0.8rem;
-  margin-bottom: 5px;
+  margin: 0.5rem 0 0.3rem;  /* was: 2rem 0 0.8rem + separate margin-bottom: 5px */
 }
 
 .profile-photo img {
