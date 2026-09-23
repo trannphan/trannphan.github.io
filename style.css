@@ -109,7 +109,7 @@ li {
 
 /* override global .content center for hero text */
 .hero .positions p {
-  text-align: left;
+  text-align: justify;
 }
 
 /* ICONS */
@@ -242,6 +242,6 @@ footer {
   }
 
   .hero .positions p {
-    text-align: center;
+    text-align: justify;
   }
 }
