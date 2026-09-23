@@ -100,25 +100,16 @@ li {
 }
 
 .hero-text {
-  display: flex;                /* FIX 1: stack children vertically */
+  display: flex;
   flex-direction: column;
   align-items: flex-start;
   flex: 1;
   text-align: left;
 }
 
-/* FIX 2: override global .content center for hero text */
-.hero .intro p,
+/* override global .content center for hero text */
 .hero .positions p {
   text-align: left;
-}
-
-.hero-text .icons {
-  display: flex;                /* FIX 3: explicit flex so icons stay in a row */
-  flex-direction: row;
-  justify-content: flex-start;
-  gap: 20px;
-  margin: 0.5rem 0;
 }
 
 /* ICONS */
@@ -169,19 +160,10 @@ footer {
   margin-top: 2rem;
 }
 
-/* INTRO SECTION */
-.intro p {
-  margin: 4px 0;
-}
-
-.intro {
-  margin-top: 0;
-  margin-bottom: 18px;
-}
-
 /* POSITIONS SECTION */
 .positions p {
   margin: 4px 0;
+  font-size: 1rem;
 }
 
 .positions {
@@ -248,7 +230,7 @@ footer {
     font-size: 0.85rem;
   }
 
-  /* FIX 4: hero stacks vertically on mobile */
+  /* hero stacks vertically on mobile */
   .hero {
     flex-direction: column;
     align-items: center;
@@ -259,12 +241,7 @@ footer {
     text-align: center;
   }
 
-  .hero .intro p,
   .hero .positions p {
     text-align: center;
-  }
-
-  .hero-text .icons {
-    justify-content: center;
   }
 }
