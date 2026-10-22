@@ -132,15 +132,18 @@ li {
   color: #2f4f66;
 }
 
-/* UAM logo used as an icon (sized relative to the icon font size) */
-.icons .icon-img {
-  height: 1.1em;
-  width: auto;
+/* UAM logo, cropped to remove the empty margins of the source image */
+.icons .uam-icon {
   display: block;
+  height: 1.1em;
+  aspect-ratio: 600 / 755;
+  background: url("uam-logo.png") no-repeat;
+  background-size: 150% auto;
+  background-position: 50% 41%;
   mix-blend-mode: multiply; /* hides the white background of the PNG */
 }
 
-.icons a:hover .icon-img {
+.icons a.uam-icon:hover {
   opacity: 0.8;
 }
 
@@ -175,8 +178,8 @@ footer {
 
 /* POSITIONS SECTION */
 .positions p {
-  margin: 12px 0;        /* was 4px — increases space between paragraphs */
-  font-size: 1.05rem;    /* was 1rem — slightly bigger */
+  margin: 12px 0;
+  font-size: 1.05rem;
 }
 
 .positions {
