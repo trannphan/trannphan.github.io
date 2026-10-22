@@ -85,7 +85,7 @@ li {
   flex-direction: row;
   align-items: flex-start;
   gap: 2rem;
-  margin-bottom: 1.5rem;
+  margin-bottom: 0.25rem;
 }
 
 .profile-photo {
@@ -116,8 +116,9 @@ li {
 .icons {
   display: flex;
   justify-content: center;
+  align-items: center;
   gap: 30px;
-  margin: 1rem 0;
+  margin: 0.6rem 0 0.4rem;
 }
 
 .icons a {
@@ -129,6 +130,18 @@ li {
 .icons a:hover {
   transform: translateY(-4px);
   color: #2f4f66;
+}
+
+/* UAM logo used as an icon (sized relative to the icon font size) */
+.icons .icon-img {
+  height: 1.1em;
+  width: auto;
+  display: block;
+  mix-blend-mode: multiply; /* hides the white background of the PNG */
+}
+
+.icons a:hover .icon-img {
+  opacity: 0.8;
 }
 
 /* UPDATES */
@@ -168,7 +181,11 @@ footer {
 
 .positions {
   margin-top: 10px;
-  margin-bottom: 25px;
+  margin-bottom: 0;
+}
+
+.positions p:last-child {
+  margin-bottom: 0;
 }
 
 /* =========================
