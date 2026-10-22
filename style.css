@@ -85,7 +85,7 @@ li {
   flex-direction: row;
   align-items: flex-start;
   gap: 2rem;
-  margin-bottom: 0.25rem;
+  margin-bottom: 0.5rem;
 }
 
 .profile-photo {
@@ -118,7 +118,7 @@ li {
   justify-content: center;
   align-items: center;
   gap: 30px;
-  margin: 0.6rem 0 0.4rem;
+  margin: 1.5rem 0 0.4rem;
 }
 
 .icons a {
@@ -222,7 +222,7 @@ footer {
   .icons {
     gap: 18px;
     flex-wrap: wrap;
-    margin: 0.8rem 0;
+    margin: 1.2rem 0 0.8rem;
   }
 
   .icons a {
